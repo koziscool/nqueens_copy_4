@@ -2,11 +2,18 @@
 
 controller = {
 
+  model: solver,
+  view: boardView,
+
   init: function(size) {
 
     var start = new Date();
     console.log( "start", start ); 
 
+    this.model.init( size );
+    this.view.init();
+
+    
 
 
     var finish = new Date();
