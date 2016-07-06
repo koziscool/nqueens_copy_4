@@ -12,11 +12,11 @@ controller = {
 
     this.model.init( size );
     this.view.init();
-
+    this.model.solve();
     this.view.showSolution();
 
 
-
+    console.log( "solution", this.model.numSolutions );
 
     var finish = new Date();
     console.log( "finish", finish ); 
@@ -27,6 +27,6 @@ controller = {
 
 
 $(document).ready( function(){
-  controller.init();
+  controller.init( 10 );
 });
 
