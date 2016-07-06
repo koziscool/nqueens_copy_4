@@ -13,7 +13,9 @@ controller = {
     this.model.init( size );
     this.view.init();
 
-    
+    this.view.showSolution();
+
+
 
 
     var finish = new Date();

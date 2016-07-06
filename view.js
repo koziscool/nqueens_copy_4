@@ -28,7 +28,10 @@ var boardView = {
 
 
   showSolution: function() {
-
+    for( var i = 0; i < Math.pow(this.model.size, 2); i++   )  {
+      var idString = '#square-' + i;
+      $(idString).addClass('has-queen');
+    }
   },
 
 };
